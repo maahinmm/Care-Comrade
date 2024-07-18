@@ -19,13 +19,19 @@ struct ContentView: View {
           Text("Joy Buolamwini")
             .font(.title)
             .fontWeight(.bold)
-          Spacer()
           Text("Poet of Code")
+          
+          Button("Get Started") {
+              /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+          }
+          .font(.body)
+          .buttonStyle(.borderedProminent)
+          .tint(Color(red: 0.258, green: 0.396, blue: 0.62))
         }
-        Text("Founder of the Algorithmic Justice League. Uses art and research to illuminate social implications of AI and to promote equitable and accountable technology")
       .padding()
       .background(Rectangle().foregroundColor(Color(red: 0.945, green: 0.945, blue: 0.945)).cornerRadius(20.0))
       .padding()
+       
     }
   }
 }
