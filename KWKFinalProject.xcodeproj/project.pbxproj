@@ -11,6 +11,8 @@
 		6421D74C2C41C48D00B69AC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6421D74B2C41C48D00B69AC3 /* ContentView.swift */; };
 		6421D74E2C41C48F00B69AC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6421D74D2C41C48F00B69AC3 /* Assets.xcassets */; };
 		6421D7512C41C48F00B69AC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6421D7502C41C48F00B69AC3 /* Preview Assets.xcassets */; };
+		885F54532C49859C0025D7E0 /* HelpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F54522C49859C0025D7E0 /* HelpPage.swift */; };
+		885F54552C4985AB0025D7E0 /* HotlinePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F54542C4985AB0025D7E0 /* HotlinePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		6421D74B2C41C48D00B69AC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6421D74D2C41C48F00B69AC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6421D7502C41C48F00B69AC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		885F54522C49859C0025D7E0 /* HelpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPage.swift; sourceTree = "<group>"; };
+		885F54542C4985AB0025D7E0 /* HotlinePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotlinePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				6421D7492C41C48D00B69AC3 /* KWKFinalProjectApp.swift */,
 				6421D74B2C41C48D00B69AC3 /* ContentView.swift */,
+				885F54542C4985AB0025D7E0 /* HotlinePage.swift */,
+				885F54522C49859C0025D7E0 /* HelpPage.swift */,
 				6421D74D2C41C48F00B69AC3 /* Assets.xcassets */,
 				6421D74F2C41C48F00B69AC3 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885F54552C4985AB0025D7E0 /* HotlinePage.swift in Sources */,
 				6421D74C2C41C48D00B69AC3 /* ContentView.swift in Sources */,
 				6421D74A2C41C48D00B69AC3 /* KWKFinalProjectApp.swift in Sources */,
+				885F54532C49859C0025D7E0 /* HelpPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
