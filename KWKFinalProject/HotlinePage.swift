@@ -84,19 +84,6 @@ struct HotlinePage: View {
                             Spacer()
                             
                             VStack{
-                                NavigationLink(destination: HotlinePage()) {
-                                    Image(systemName: "phone.fill")
-                                        .font(.system(size: 35))
-                                    .foregroundStyle(Color.white)}
-                                Text("Hotlines")
-                                    .font(.caption)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color.white)
-                            }
-                            
-                            Spacer()
-                            
-                            VStack{
                                 NavigationLink(destination: HelpPage()) {
                                     Image(systemName: "light.beacon.max.fill")
                                         .font(.system(size: 40))
@@ -107,7 +94,22 @@ struct HotlinePage: View {
                                     .foregroundColor(Color.white)
                             }
                             .background(Circle().foregroundColor(Color(red: 0.047, green: 0.752, blue: 0.874)).frame(width: 125, height: 125))
-                        .padding(.leading)
+                        .padding(.horizontal)
+                            
+                            Spacer()
+                            
+                            VStack{
+                                NavigationLink(destination: HotlinePage()) {
+                                    Image(systemName: "phone.fill")
+                                        .font(.system(size: 35))
+                                    .foregroundStyle(Color.white)}
+                                Text("Hotlines")
+                                    .font(.caption)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.white)
+                            }
+                            
+                            
                         }
                         .padding(.horizontal, 60)
                         .padding(.bottom, 20)
