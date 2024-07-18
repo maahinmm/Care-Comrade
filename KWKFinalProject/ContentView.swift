@@ -11,7 +11,7 @@ struct ContentView: View {
     ZStack {
       Color(red: 0.945, green: 0.945, blue: 0.945)
         .ignoresSafeArea()
-      VStack (alignment: .leading, spacing: 20.0) {
+      VStack (alignment: .center, spacing: 20.0) {
         Image("logo")
           .resizable(resizingMode: .stretch)
           .aspectRatio(contentMode: .fit)
@@ -26,7 +26,7 @@ struct ContentView: View {
           }
           .font(.body)
           .buttonStyle(.borderedProminent)
-          .tint(Color(red: 0.258, green: 0.396, blue: 0.62))
+          .tint(Color(red: 0.368, green: 0.090, blue: 0.921))
         }
       .padding()
       .background(Rectangle().foregroundColor(Color(red: 0.945, green: 0.945, blue: 0.945)).cornerRadius(20.0))
