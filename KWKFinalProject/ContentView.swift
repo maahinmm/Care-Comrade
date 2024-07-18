@@ -51,7 +51,7 @@ struct ContentView: View {
                 }
             }
             .padding(.horizontal, 60)
-            .padding(.vertical, 25)
+            .padding(.vertical, 30)
             .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)))
             .padding(.bottom, -35)
             .padding(.top, -7)
