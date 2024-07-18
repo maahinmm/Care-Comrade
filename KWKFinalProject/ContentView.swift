@@ -36,12 +36,14 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                         .font(.system(size: 40))
                     .foregroundStyle(Color.white)}
+                
                 Spacer()
                 
                 NavigationLink(destination: HotlinePage()) {
                     Image(systemName: "phone.fill")
                         .font(.system(size: 40))
                     .foregroundStyle(Color.white)}
+                
                 Spacer()
                 
                 NavigationLink(destination: HelpPage()) {

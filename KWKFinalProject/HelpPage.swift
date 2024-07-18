@@ -23,59 +23,62 @@ struct HelpPage: View {
                             .multilineTextAlignment(.center)
                     }
                     .padding(.top, 30)
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
-                        
-                        VStack {
+                    .padding(.bottom, 10)
+                    ScrollView{
+                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
                             
-                            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/){
-                                Text("Gunshot Wound")
+                            VStack {
+                                
+                                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/){
+                                    Text("Gunshot Wound")
+                                }
+                                .font(.title2)
+                                .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
+                                
                             }
-                            .font(.title2)
-                            .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
-                            
-                        }
-                        .padding()
-                        .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
-                        .padding()
-                        VStack{
-                            
-                            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                                Text("Anxiety Attack")
+                            .padding()
+                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
+                            .padding()
+                            VStack{
+                                
+                                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                                    Text("Anxiety Attack")
+                                }
+                                .font(.title2)
+                                .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
+                                
                             }
-                            .font(.title2)
-                            .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
+                            .padding()
+                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
+                            .padding()
                             
-                        }
-                        .padding()
-                        .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
-                        .padding()
-                        
-                        VStack{
-                            
-                            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                                Text("Anxiety Attack")
+                            VStack{
+                                
+                                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                                    Text("Anxiety Attack")
+                                }
+                                .font(.title2)
+                                .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
+                                
                             }
-                            .font(.title2)
-                            .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
-                            
-                        }
-                        .padding()
-                        .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
-                        .padding()
-                        VStack{
-                            
-                            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                                Text("Anxiety Attack")
+                            .padding()
+                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
+                            .padding()
+                            VStack{
+                                
+                                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                                    Text("Anxiety Attack")
+                                }
+                                .font(.title2)
+                                .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
+                                
                             }
-                            .font(.title2)
-                            .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
-                            
+                            .padding()
+                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
+                            .padding()
                         }
-                        .padding()
-                        .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
-                        .padding()
                     }
-                    .padding(.horizontal, 5)
+                    .padding(.horizontal, 10)
                     Spacer()
                     VStack{
                         HStack {
