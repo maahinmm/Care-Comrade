@@ -24,46 +24,49 @@ struct HotlinePage: View {
                     }
                     .padding(.top, 30)
                     .padding(.bottom, 10)
+                    
                     ScrollView{
                         Spacer()
                         VStack {
-                            Text("Medical Emergency")
-                                .font(.title2)
-                                .foregroundColor(Color.white)
+                            VStack{
+                                Text("Emergency Services: \n911: Universal emergency number in North America for police, fire, and medical emergencies.")
+                                    .font(.title2)
+                                .foregroundColor(Color.white)}
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 250, height: 75))
-                            .padding()
+                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 350))
+                            .padding(.horizontal, 5)
                             
                         Spacer()
-                            
-                            Text("Gunshot Wound")
-                                .font(.title2)
-                                .foregroundColor(Color.white)
+                            VStack{
+                                Text("Poison Control: \n1-800-222-1222: United States National Poison Control Hotline for poison emergencies and prevention information")
+                                    .font(.title2)
+                                    .foregroundColor(Color.white)}
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 250, height: 75))
-                            .padding()
-                            
-                        Spacer()
-                            
-                            Text("Gunshot Wound")
-                                .font(.title2)
-                                .foregroundColor(Color.white)
-                            .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 250, height: 75))
-                            .padding()
+                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 350))
+                            .padding(.horizontal, 5)
                             
                         Spacer()
+                            VStack{
+                                Text("National Suicide Prevention Lifeline (USA): \n1-800-273-TALK (1-800-273-8255): Provides free, confidential support for people in distress, 24/7")
+                                    .font(.title2)
+                                .foregroundColor(Color.white)}
+                            .padding()
+                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 350))
+                            .padding(.horizontal, 10)
                             
-                            Text("Gunshot Wound")
-                                .font(.title2)
-                                .foregroundColor(Color.white)
+                        Spacer()
+                            VStack{
+                                Text("SAMHSA National Helpline (USA): 1-800-662-HELP(1-800-662-4357): Provides information, referrals, and support for mental health and substance abuse issues, 24/7")
+                                    .font(.title2)
+                                .foregroundColor(Color.white)}
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 250, height: 75))
-                            .padding()
+                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 350))
+                            .padding(.horizontal, 10)
                         }
+                        .padding(.horizontal, 30)
                     }
                     
-                    Spacer()
+                    
                     
                     VStack{
                         HStack {
