@@ -29,7 +29,7 @@ struct HotlinePage: View {
                             .font(.largeTitle)
                             .fontWeight(.bold)
                         
-                        Text("Emergency assistance is just a tap away!")
+                        Text("Scroll below for hotlines")
                             .multilineTextAlignment(.center)
                     }
                     .padding(.top, 30)
@@ -98,7 +98,7 @@ struct HotlinePage: View {
                                 NavigationLink(destination: HelpPage()) {
                                     Image(systemName: "light.beacon.max.fill")
                                         .font(.system(size: 40))
-                                        .foregroundStyle(Color.white)}
+                                        .foregroundStyle(Color.red)}
                                 Text("Help")
                                     .font(.caption)
                                     .fontWeight(.bold)

@@ -84,6 +84,30 @@ struct HelpPage: View {
                             .padding()
                             .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 150, height: 100))
                             .padding()
+                            VStack{
+                                
+                                NavigationLink(destination: infoPage5()) {
+                                    Text("Heart Attack")
+                                }
+                                .font(.title2)
+                                .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
+                                
+                            }
+                            .padding()
+                            .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 150, height: 100))
+                            .padding()
+                            VStack{
+                                
+                                NavigationLink(destination: infoPage4()) {
+                                    Text("Allergic Reaction")
+                                }
+                                .font(.title2)
+                                .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
+                                
+                            }
+                            .padding()
+                            .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 150, height: 100))
+                            .padding()
                         }
                     }
                     .padding(.horizontal, 10)
@@ -108,7 +132,7 @@ struct HelpPage: View {
                                 NavigationLink(destination: HelpPage()) {
                                     Image(systemName: "light.beacon.max.fill")
                                         .font(.system(size: 40))
-                                        .foregroundStyle(Color.white)
+                                        .foregroundStyle(Color.red)
                                     .navigationBarBackButtonHidden(true)}
                                 Text("Help")
                                     .font(.caption)

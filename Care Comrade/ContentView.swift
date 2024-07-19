@@ -27,8 +27,12 @@ struct ContentView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                         .cornerRadius(15)
-                    Text("Emergency assistance is just a tap away!")
+                    Text("Emergency assistance is just a tap away! Care Comrade serves to assist you and provide step-by-step instructions on how to deal with common emergencies.")
                         .font(.body)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 30)
+                    Text("Click “Help” to get started")
+                        .font(.title3)
                         .fontWeight(.bold)
                     
                 }
@@ -54,7 +58,7 @@ struct ContentView: View {
                     NavigationLink(destination: HelpPage()) {
                         Image(systemName: "light.beacon.max.fill")
                             .font(.system(size: 40))
-                            .foregroundStyle(Color.white)
+                            .foregroundStyle(Color.red)
                             .navigationBarBackButtonHidden(true)}
                     Text("Help")
                         .font(.caption)
