@@ -126,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6421D7412C41C48D00B69AC3 /* Build configuration list for PBXProject "KWKFinalProject" */;
+			buildConfigurationList = 6421D7412C41C48D00B69AC3 /* Build configuration list for PBXProject "Care Comrad" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -357,7 +357,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6421D7412C41C48D00B69AC3 /* Build configuration list for PBXProject "KWKFinalProject" */ = {
+		6421D7412C41C48D00B69AC3 /* Build configuration list for PBXProject "Care Comrad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6421D7522C41C48F00B69AC3 /* Debug */,
