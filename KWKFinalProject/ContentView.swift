@@ -9,6 +9,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack{
+            HStack{
+                
+            }
+            .padding(.horizontal, 1000)
+            .padding(.bottom, 60)
+            .padding(.top, 15)
+            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)))
+            .padding(.bottom, -70)
+            .ignoresSafeArea()
+            
             ZStack {
                 Color(red: 0.945, green: 0.945, blue: 0.945)
                     .ignoresSafeArea()
@@ -19,13 +29,8 @@ struct ContentView: View {
                         .cornerRadius(15)
                     Text("Emergency assistance is just a tap away!")
                         .font(.body)
+                        .fontWeight(.bold)
                     
-                    Button("Get Started") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                    }
-                    .font(.body)
-                    .buttonStyle(.borderedProminent)
-                    .tint(Color(red: 0.368, green: 0.090, blue: 0.921))
                 }
                 .background(Rectangle().foregroundColor(Color(red: 0.945, green: 0.945, blue: 0.945)).cornerRadius(20.0))
                 
@@ -35,7 +40,8 @@ struct ContentView: View {
                     NavigationLink(destination: ContentView()) {
                         Image(systemName: "house.fill")
                             .font(.system(size: 35))
-                        .foregroundStyle(Color.white)}
+                            .foregroundStyle(Color.white)
+                            .navigationBarBackButtonHidden(true)}
                     Text("Home")
                         .font(.caption)
                         .fontWeight(.bold)
@@ -48,8 +54,9 @@ struct ContentView: View {
                     NavigationLink(destination: HelpPage()) {
                         Image(systemName: "light.beacon.max.fill")
                             .font(.system(size: 40))
-                            .foregroundStyle(Color.white)}
-                    Text("Home")
+                            .foregroundStyle(Color.white)
+                            .navigationBarBackButtonHidden(true)}
+                    Text("Help")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
@@ -63,7 +70,8 @@ struct ContentView: View {
                     NavigationLink(destination: HotlinePage()) {
                         Image(systemName: "phone.fill")
                             .font(.system(size: 35))
-                        .foregroundStyle(Color.white)}
+                            .foregroundStyle(Color.white)
+                            .navigationBarBackButtonHidden(true)}
                     Text("Hotlines")
                         .font(.caption)
                         .fontWeight(.bold)

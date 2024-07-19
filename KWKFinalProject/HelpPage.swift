@@ -10,6 +10,15 @@ import SwiftUI
 struct HelpPage: View {
     var body: some View {
         NavigationStack{
+            HStack{
+                
+            }
+            .padding(.horizontal, 1000)
+            .padding(.bottom, 60)
+            .padding(.top, 15)
+            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)))
+            .padding(.bottom, -70)
+            .ignoresSafeArea()
             ZStack {
                 Color(red: 0.945, green: 0.945, blue: 0.945)
                     .ignoresSafeArea()
@@ -29,7 +38,7 @@ struct HelpPage: View {
                             
                             VStack {
                                 
-                                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/){
+                                NavigationLink(destination: infoPage1()){
                                     Text("Gunshot Wound")
                                 }
                                 .font(.title2)
@@ -37,11 +46,11 @@ struct HelpPage: View {
                                 
                             }
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
+                            .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 150, height: 100))
                             .padding()
                             VStack{
                                 
-                                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                                NavigationLink(destination: infoPage2()) {
                                     Text("Anxiety Attack")
                                 }
                                 .font(.title2)
@@ -49,31 +58,31 @@ struct HelpPage: View {
                                 
                             }
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
+                            .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 150, height: 100))
                             .padding()
                             
                             VStack{
                                 
-                                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                                    Text("Anxiety Attack")
+                                NavigationLink(destination: infoPage3()) {
+                                    Text("Fracture")
                                 }
                                 .font(.title2)
                                 .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
                             }
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
+                            .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 150, height: 100))
                             .padding()
                             VStack{
                                 
-                                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                                    Text("Anxiety Attack")
+                                NavigationLink(destination: infoPage4()) {
+                                    Text("Venomous Bite")
                                 }
                                 .font(.title2)
                                 .tint(Color(red: 0.945, green: 0.945, blue: 0.945))
                                 
                             }
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 150, height: 100))
+                            .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 150, height: 100))
                             .padding()
                         }
                     }
@@ -85,7 +94,8 @@ struct HelpPage: View {
                                 NavigationLink(destination: ContentView()) {
                                     Image(systemName: "house.fill")
                                         .font(.system(size: 35))
-                                    .foregroundStyle(Color.white)}
+                                        .foregroundStyle(Color.white)
+                                    .navigationBarBackButtonHidden(true)}
                                 Text("Home")
                                     .font(.caption)
                                     .fontWeight(.bold)
@@ -98,8 +108,9 @@ struct HelpPage: View {
                                 NavigationLink(destination: HelpPage()) {
                                     Image(systemName: "light.beacon.max.fill")
                                         .font(.system(size: 40))
-                                        .foregroundStyle(Color.white)}
-                                Text("Home")
+                                        .foregroundStyle(Color.white)
+                                    .navigationBarBackButtonHidden(true)}
+                                Text("Help")
                                     .font(.caption)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.white)
@@ -113,7 +124,8 @@ struct HelpPage: View {
                                 NavigationLink(destination: HotlinePage()) {
                                     Image(systemName: "phone.fill")
                                         .font(.system(size: 35))
-                                    .foregroundStyle(Color.white)}
+                                        .foregroundStyle(Color.white)
+                                    .navigationBarBackButtonHidden(true)}
                                 Text("Hotlines")
                                     .font(.caption)
                                     .fontWeight(.bold)
@@ -130,7 +142,6 @@ struct HelpPage: View {
                         .padding(.top, -7)
                     }
                 }
-                
             }
         }
     }

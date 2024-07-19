@@ -10,6 +10,16 @@ import SwiftUI
 struct HotlinePage: View {
     var body: some View {
         NavigationStack{
+            HStack{
+                
+            }
+            .padding(.horizontal, 1000)
+            .padding(.bottom, 60)
+            .padding(.top, 15)
+            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)))
+            .padding(.bottom, -70)
+            .ignoresSafeArea()
+            
             ZStack {
                 Color(red: 0.945, green: 0.945, blue: 0.945)
                     .ignoresSafeArea()
@@ -33,7 +43,7 @@ struct HotlinePage: View {
                                     .font(.title2)
                                 .foregroundColor(Color.white)}
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 350))
+                            .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 350))
                             .padding(.horizontal, 5)
                             
                         Spacer()
@@ -42,7 +52,7 @@ struct HotlinePage: View {
                                     .font(.title2)
                                     .foregroundColor(Color.white)}
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 350))
+                            .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 350))
                             .padding(.horizontal, 5)
                             
                         Spacer()
@@ -51,7 +61,7 @@ struct HotlinePage: View {
                                     .font(.title2)
                                 .foregroundColor(Color.white)}
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 350))
+                            .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 350))
                             .padding(.horizontal, 10)
                             
                         Spacer()
@@ -60,7 +70,7 @@ struct HotlinePage: View {
                                     .font(.title2)
                                 .foregroundColor(Color.white)}
                             .padding()
-                            .background(Rectangle().foregroundColor(Color(red: 0.368, green: 0.090, blue: 0.921)).cornerRadius(20.0).frame(width: 350))
+                            .background(Rectangle().foregroundColor(Color(red: 0.549, green: 0.321, blue: 1)).cornerRadius(20.0).frame(width: 350))
                             .padding(.horizontal, 10)
                         }
                         .padding(.horizontal, 30)
@@ -74,7 +84,8 @@ struct HotlinePage: View {
                                 NavigationLink(destination: ContentView()) {
                                     Image(systemName: "house.fill")
                                         .font(.system(size: 35))
-                                    .foregroundStyle(Color.white)}
+                                        .foregroundStyle(Color.white)
+                                        .navigationBarBackButtonHidden(true)}
                                 Text("Home")
                                     .font(.caption)
                                     .fontWeight(.bold)
@@ -88,7 +99,7 @@ struct HotlinePage: View {
                                     Image(systemName: "light.beacon.max.fill")
                                         .font(.system(size: 40))
                                         .foregroundStyle(Color.white)}
-                                Text("Home")
+                                Text("Help")
                                     .font(.caption)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.white)
