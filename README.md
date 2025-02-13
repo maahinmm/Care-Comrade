@@ -17,3 +17,5 @@ In the future, we hope to expand the possibilities of our app. This includes:
 - Implementing an AI chatbot to assist users during emergencies 
 - Video tutorials for certain situations
 - A detailed website about our mission
+
+Created by AKRETI SHARMA, MAAHIN MIRZA, and ANANYA LAL
